@@ -19,7 +19,7 @@ This is an updated spin checkpoint , 2048 clusters, I created that works better 
 
 Librespeech 100 clean -> + additional 350 clean set\
 Hours: 100 -> 450\
-Speakers: 251 -> 1172\
+Speakers: 251 -> 1172
 
 This converges models much faster, likely due to the massively increased speaker exposure, and even works with reasonable sized datasets without pretrain finetuning. (I used a 1 hour 45 minute on an existing pretrain, and speech adapted quickly)\
 
