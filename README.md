@@ -15,12 +15,12 @@ Pretrain's need to be finetuned again after extracting features with spin.
 
 ## UPDATE:
 
-This is an updated spin checkpoint , 2048 clusters, I created that works better for the purpose of RVC generalization
+This is an updated spin checkpoint , 2048 clusters, I created that works better for the purpose of RVC generalization\
 
-Librespeech 100 clean -> + additional 350 clean set
-Hours: 100 -> 450
-Speakers: 251 -> 1172
+Librespeech 100 clean -> + additional 350 clean set\
+Hours: 100 -> 450\
+Speakers: 251 -> 1172\
 
-This converges models much faster, likely due to the massively increased speaker exposure, and even works with reasonable sized datasets without pretrain finetuning. (I used a 1 hour 45 minute on an existing pretrain, and speech adapted quickly)
+This converges models much faster, likely due to the massively increased speaker exposure, and even works with reasonable sized datasets without pretrain finetuning. (I used a 1 hour 45 minute on an existing pretrain, and speech adapted quickly)\
 
 https://huggingface.co/dr87/spin-for-rvc/blob/main/SPIN_450H_FINETUNE_26768.zip
