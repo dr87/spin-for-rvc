@@ -4,7 +4,7 @@
 
 ### 
 
-Download a spin hubert checkpoint [here](https://github.com/vectominist/spin)
+Download a spin hubert checkpoint [here](https://github.com/vectominist/spin)   (Offical checkpoints have timbre bleed in RVC, it is recommend to download my trained model below)
 
 Run convert_lighting.py to convert the spin pylightning checkpoint to a standard pytorch .pth file
 
@@ -15,12 +15,7 @@ Pretrain's need to be finetuned again after extracting features with spin.
 
 ## UPDATE:
 
-This is an updated spin checkpoint , 2048 clusters, I created that works better for the purpose of RVC generalization\
+The official checkpoints with layer 11 and 12 trained have timbre bleed. The current way to fix this is by training transformer layers 7-12 instead. Below is the currently accepted checkpoint for RVC and currently used on AIhub models. This model is trained based on librespeech 400+ hour dataset.
 
-Librespeech 100 clean -> + additional 350 clean set\
-Hours: 100 -> 450\
-Speakers: 251 -> 1172
+https://huggingface.co/dr87/spin-for-rvc/resolve/main/spin_layers_7_12.zip
 
-This converges models much faster, likely due to the massively increased speaker exposure, and even works with reasonable sized datasets without pretrain finetuning. (I used a 1 hour 45 minute on an existing pretrain, and speech adapted quickly)\
-
-https://huggingface.co/dr87/spin-for-rvc/blob/main/SPIN_450H_FINETUNE_26768.zip
