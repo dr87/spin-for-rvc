@@ -21,5 +21,5 @@ Pretrain's need to be finetuned again after extracting features with spin.
 
 Spinv2 is here. Timbre bleed is fixed, as well as slightly slurred speech with shorter datasets. Pronunciation should be more clear, and codebook has been reduced to 1024 for a number of reasons, as it just peforms better in RVC.
 
-https://huggingface.co/dr87/spinv2_rvc/blob/main/spinv2.zip
+[https://huggingface.co/dr87/spinv2_rvc/blob/main/spinv2.zip](https://huggingface.co/dr87/spinv2_rvc/resolve/main/spinv2.zip)
 
